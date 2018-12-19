@@ -1,4 +1,4 @@
-package com.kwabenaberko.mvpsampleapp;
+package com.kwabenaberko.mvpsampleapp.model;
 
 public class Contact {
     private String firstName;

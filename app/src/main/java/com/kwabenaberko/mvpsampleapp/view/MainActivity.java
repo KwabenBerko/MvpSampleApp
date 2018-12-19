@@ -1,4 +1,4 @@
-package com.kwabenaberko.mvpsampleapp;
+package com.kwabenaberko.mvpsampleapp.view;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -11,6 +11,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
+import com.kwabenaberko.mvpsampleapp.R;
+import com.kwabenaberko.mvpsampleapp.model.Contact;
+import com.kwabenaberko.mvpsampleapp.presentation.ContactsPresenter;
+import com.kwabenaberko.mvpsampleapp.presentation.ContactsPresenterImpl;
 
 import java.util.List;
 
@@ -32,8 +37,6 @@ public class MainActivity extends AppCompatActivity implements ContactsView {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mContactsPresenter = new ContactsPresenterImpl();
-        mContactsPresenter.setView(this);
 
         mLinearLayout = findViewById(R.id.main_layout);
         firstNameEditText = findViewById(R.id.first_name_edit_text);
@@ -54,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements ContactsView {
             }
         });
 
+
+        mContactsPresenter = new ContactsPresenterImpl();
+        mContactsPresenter.setView(this);
 
     }
 

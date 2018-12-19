@@ -1,4 +1,6 @@
-package com.kwabenaberko.mvpsampleapp;
+package com.kwabenaberko.mvpsampleapp.view;
+
+import com.kwabenaberko.mvpsampleapp.model.Contact;
 
 import java.util.List;
 

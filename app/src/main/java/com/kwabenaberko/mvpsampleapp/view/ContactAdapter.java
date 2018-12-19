@@ -1,4 +1,4 @@
-package com.kwabenaberko.mvpsampleapp;
+package com.kwabenaberko.mvpsampleapp.view;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.kwabenaberko.mvpsampleapp.R;
+import com.kwabenaberko.mvpsampleapp.model.Contact;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +53,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         ContactViewHolder(View itemView) {
             super(itemView);
             fullNameTextView = itemView.findViewById(R.id.full_name_textview);
-            phoneNumberTextView = itemView.findViewById(R.id.phone_number_edit_text);
+            phoneNumberTextView = itemView.findViewById(R.id.phone_number_textview);
         }
     }
 }

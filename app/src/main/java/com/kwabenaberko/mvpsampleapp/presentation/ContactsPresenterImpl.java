@@ -1,4 +1,8 @@
-package com.kwabenaberko.mvpsampleapp;
+package com.kwabenaberko.mvpsampleapp.presentation;
+
+import com.kwabenaberko.mvpsampleapp.view.ContactsView;
+import com.kwabenaberko.mvpsampleapp.model.Contact;
+import com.kwabenaberko.mvpsampleapp.model.ContactsRepository;
 
 import java.util.List;
 
@@ -7,7 +11,7 @@ public class ContactsPresenterImpl implements ContactsPresenter {
     private ContactsRepository mContactsRepository;
     private ContactsView mContactsView;
 
-    ContactsPresenterImpl(){
+    public ContactsPresenterImpl(){
         mContactsRepository = new ContactsRepository();
     }
 
