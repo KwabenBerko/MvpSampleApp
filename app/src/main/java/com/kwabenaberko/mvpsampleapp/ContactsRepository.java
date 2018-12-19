@@ -6,12 +6,6 @@ import java.util.List;
 public class ContactsRepository {
     private final List<Contact> mContactList = new ArrayList<>();
 
-    ContactsRepository(){
-
-        mContactList.add(new Contact("Kwabena", "Berko", "0571234567"));
-        mContactList.add(new Contact("Roy", "Mensah", "0279876543"));
-
-    }
 
     List<Contact> getContactList(){
         return mContactList;
